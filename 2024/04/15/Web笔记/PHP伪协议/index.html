@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="ShokaX Can" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="ShokaX Can" type="application/atom+xml"><link rel="alternate" type="application/json" title="ShokaX Can" href="http://example.com/feed.json"/><link rel="preconnect" href="https://s4.zstatic.net"/><link rel="preconnect" href="https://at.alicdn.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CFredericka%20the%20Great:400,400italic,700,700italic%7CNoto%20Serif%20JP:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.14"><link rel="modulepreload" href="/js/chunk-M2OVB55D.js"></link><link rel="modulepreload" href="/js/chunk-NDLKSCFX.js"></link><link rel="modulepreload" href="/js/chunk-WTUMPC55.js"></link><link rel="modulepreload" href="/js/copy-tex-AD66XUJC.js"></link><link rel="modulepreload" href="/js/index.esm-IITGAMGS.js"></link><link rel="modulepreload" href="/js/post-ZWFGG4LU.js"></link><link rel="modulepreload" href="/js/quicklink-ALHJ3OKU.js"></link><link rel="modulepreload" href="/js/siteInit.js"></link><link rel="preload" href="https://tva4.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva4.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva4.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva4.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva4.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg" as="image" fetchpriority="high"><link rel="preload" href="https://tva4.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg" as="image" fetchpriority="high"><link rel="canonical" href="http://example.com/2024/04/15/Web%E7%AC%94%E8%AE%B0/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/"><title>PHP伪协议</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">PHP伪协议</h1><div class="meta"><span class="item" title="Created: 2024-04-15 21:55:50"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">Posted on</span><time itemprop="dateCreated datePublished" datetime="2024-04-15T21:55:50+08:00">2024-04-15</time></span><span class="item" title="Symbols count in article"><span class="icon"><i class="ic i-pen"></i></span><span class="text">Symbols count in article</span><span>3.2k</span><span class="text">words</span></span><span class="item" title="Reading time"><span class="icon"><i class="ic i-clock"></i></span><span class="text">Reading time</span><span>3 mins.</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="Toggle navigation bar"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">testName</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" style="background-image: url(&quot;https://tva4.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva4.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva4.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva4.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva4.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg&quot;);"></li><li class="item" style="background-image: url(&quot;https://tva4.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg&quot;);"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">Home</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-cn"><link itemprop="mainEntityOfPage" href="http://example.com/2024/04/15/Web%E7%AC%94%E8%AE%B0/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="John Doe"/><meta itemprop="description" content=", "/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="ShokaX Can"/></span><div class="body md" itemprop="articleBody"><h1 id="php伪协议"><a class="anchor" href="#php伪协议">#</a> PHP 伪协议</h1>
+<p>php:// 用来访问输入和输出流（I/O streams）。<br />
+输入 / 输出流也就是「数据流」，数据流可以是某个文件（xx.php）或某个 url（<a target="_blank" rel="noopener" href="http://www.baidu.com">http://www.baidu.com</a>）。</p>
+<p>php://filter 可以在访问数据流之前进行「过滤」，并指定过滤方式。</p>
+<p>php://filter 有 4 个可用参数：</p>
+<p>名称	描述<br />
+ resource=&lt;要过滤的数据流&gt;	这个参数是必须的。它指定了你要筛选过滤的数据流。<br />
+read=&lt;读链的筛选列表&gt;	该参数可选。可以设定一个或多个过滤器名称<br />
+ write=&lt;写链的筛选列表&gt;	该参数可选。可以设定一个或多个过滤器名称<br />
+ &lt;；两个链的筛选列表&gt;	任何没有以 read= 或 write= 作前缀 的筛选器列表会视情况应用于读或写链。</p>
+<h2 id="一-访问数据流"><a class="anchor" href="#一-访问数据流">#</a> 一、访问数据流</h2>
+<p>直接「读取」数据源的内容，resource 参数必须位于 php://filter 的末尾，并指定需要过滤筛选的数据流。</p>
+<p><strong>1）读取「url 形式」的数据流。</strong></p>
+<p>#等同于 readfile*('<a target="_blank" rel="noopener" href="http://www.baidu.com">http://www.baidu.com</a>');*</p>
+<p>readfile('php://filter/resource=<a target="_blank" rel="noopener" href="http://www.baidu.com">http://www.baidu.com</a>');</p>
+<p><strong>2）读取「文件形式」的数据流。</strong></p>
+<p><em># 等同于 include ('hello.php');</em></p>
+<p>include('php://filter/resource=hello.php');</p>
+<h2 id="二-过滤数据流"><a class="anchor" href="#二-过滤数据流">#</a> 二、过滤数据流</h2>
+<p>读取数据源之前，添加「过滤条件」。</p>
+<p>1）以「大写字母」读取  <code>http://www.baidu.com</code>  页面的全部内容</p>
+<p>readfile(&quot;php://filter/read=<strong>string.toupper</strong>/resource=<a target="_blank" rel="noopener" href="http://www.baidu.com">http://www.baidu.com</a>&quot;);</p>
+<p>2）以「小写字母」读取  <code>hello.php</code>  文件的全部内容</p>
+<p>include(&quot;php://filter/read=<strong>string.tolower</strong>/resource=hello.php&quot;);</p>
+<p>3）将  <code>hello.php</code>  文件的内容「base64 加密」后读取出来。<br />
+include () 包含的文件，默认会执行文件中的代码，<strong>但加密后的内容不会被执行，而是直接输出在页面中</strong>，复制后解密就能拿到被包含文件的内容。</p>
+<h2 id="三-多个过滤条件"><a class="anchor" href="#三-多个过滤条件">#</a> 三、多个过滤条件</h2>
+<p>同时使用「多个过滤条件」时，使用<strong>管道符 | 分隔</strong>。</p>
+<p>1）base64 加密并且转换为大写</p>
+<p>&lt;?php</p>
+<p>include('php://filter/read=convert.base64-encode|string.toupper/resource=hello.php');<br />
+ 按照「从左到右」的顺序过滤，过滤条件的顺序可能会影响过滤的结果</p>
+<h2 id="四-过滤并写入数据流"><a class="anchor" href="#四-过滤并写入数据流">#</a> 四、过滤并写入数据流</h2>
+<p>write 参数，过滤指定字符，并将过滤后的结果「输出」到指定文件中。</p>
+<p>1）过滤字符，并输出到 result.txt 文件中。</p>
+<p>&lt;?php file_put_contents('php://filter/write=string.tolower/resource=result.txt','hello text');</p>
+<h2 id="五-过滤器"><a class="anchor" href="#五-过滤器">#</a> 五、过滤器</h2>
+<h3 id="1-stringrot13"><a class="anchor" href="#1-stringrot13">#</a> 1、string.rot13</h3>
+<p>对数据流的内容进行「rot13 编码」，等于用 str_rot13 () 函数编码。</p>
+<p>ROT13（otate by 13 places）也叫回转 13 位，是一种替换式密码。</p>
+<p>ROT13 会把每一个字母替换成 13 位之后的字母，也就是把 a 换成 n，b 换成 o，以此类推；如果超过了 26 个字母的范围，就会从开头重新开始。</p>
+<h3 id="2-stringtoupper"><a class="anchor" href="#2-stringtoupper">#</a> 2、string.toupper</h3>
+<p>将数据流转换成「大写」，类似于 strupper () 函数</p>
+<p>不是直接将文件内容变成大写，而是先执行文件内容，再将执行后的结果转换成大写。</p>
+<h3 id="3-stringtolower"><a class="anchor" href="#3-stringtolower">#</a> 3、string.tolower</h3>
+<p>将数据流转换成「小写」，类似 strtolower () 函数。</p>
+<p>也是先执行文件的内容，再将执行后的结果转换成小写。</p>
+<h3 id="4-convertbase64-encode"><a class="anchor" href="#4-convertbase64-encode">#</a> 4、convert.base64-encode</h3>
+<p>对数据流的内容进行「base64 编码」，相当于 base64_encode () 函数。</p>
+<p>编码后的内容可以使用 base64_decode () 函数解码</p>
+<h3 id="5-converticonv"><a class="anchor" href="#5-converticonv">#</a> 5、convert.iconv.*</h3>
+<p>将数据流的内容按照「指定字符编码」来转换，使用格式有两种：</p>
+<p>格式一： <code>.</code>  分隔</p>
+<p>convert.iconv.&lt;input-encoding&gt;.&lt;output-encoding&gt;</p>
+<p>格式二： <code>/</code>  分隔</p>
+<p>convert.iconv.&lt;input-encoding&gt;/&lt;output-encoding&gt;</p>
+<p>ex:convert.iconv.utf-8*.utf-16* 的意思就是把文件的字符编码从 utf-8* 转换为 utf-16*</p>
+<p>支持的编码字符有</p>
+<pre><code>UCS-4*
+UCS-4BE
+UCS-4LE*
+UCS-2
+UCS-2BE
+UCS-2LE
+UTF-32*
+UTF-32BE*
+UTF-32LE*
+UTF-16*
+UTF-16BE*
+UTF-16LE*
+UTF-7
+UTF7-IMAP
+UTF-8*
+ASCII*
+EUC-JP*
+SJIS*
+eucJP-win*
+SJIS-win*
+ISO-2022-JP
+ISO-2022-JP-MS
+CP932
+CP51932
+SJIS-mac (alias: MacJapanese)
+SJIS-Mobile#DOCOMO (alias: SJIS-DOCOMO)
+SJIS-Mobile#KDDI (alias: SJIS-KDDI)
+SJIS-Mobile#SOFTBANK (alias: SJIS-SOFTBANK)
+UTF-8-Mobile#DOCOMO (alias: UTF-8-DOCOMO)
+UTF-8-Mobile#KDDI-A
+UTF-8-Mobile#KDDI-B (alias: UTF-8-KDDI)
+UTF-8-Mobile#SOFTBANK (alias: UTF-8-SOFTBANK)
+ISO-2022-JP-MOBILE#KDDI (alias: ISO-2022-JP-KDDI)
+JIS
+JIS-ms
+CP50220
+CP50220raw
+CP50221
+CP50222
+ISO-8859-1*
+ISO-8859-2*
+ISO-8859-3*
+ISO-8859-4*
+ISO-8859-5*
+ISO-8859-6*
+ISO-8859-7*
+ISO-8859-8*
+ISO-8859-9*
+ISO-8859-10*
+ISO-8859-13*
+ISO-8859-14*
+ISO-8859-15*
+ISO-8859-16*
+byte2be
+byte2le
+byte4be
+byte4le
+BASE64
+HTML-ENTITIES (alias: HTML)
+7bit
+8bit
+EUC-CN*
+CP936
+GB18030
+HZ
+EUC-TW*
+CP950
+BIG-5*
+EUC-KR*
+UHC (alias: CP949)
+ISO-2022-KR
+Windows-1251 (alias: CP1251)
+Windows-1252 (alias: CP1252)
+CP866 (alias: IBM866)
+KOI8-R*
+KOI8-U*
+ArmSCII-8 (alias: ArmSCII8)
+
+</code></pre>
+</div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">Edited on</span><time title="Modified: 2024-11-15 20:17:09" itemprop="dateModified" datetime="2024-11-15T20:17:09+08:00">2024-11-15</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>Donate</button><p>Give me a cup of [coffee]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="John Doe WeChat Pay"/><p>WeChat Pay</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="John Doe Alipay"/><p>Alipay</p></div></div></div><div id="copyright"><ul><li class="author"><strong>Post author: </strong>Lyl<i class="ic i-at"><em>@</em></i>ShokaX Can</li><li class="link"><strong>Post link: </strong><a href="http://example.com/2024/04/15/Web%E7%AC%94%E8%AE%B0/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/" title="PHP伪协议">http://example.com/2024/04/15/Web笔记/PHP伪协议/</a></li><li class="license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> unless stating additionally.</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2023/10/10/Web%E7%AC%94%E8%AE%B0/#HTML/" rel="prev" itemprop="url" title="HTML笔记" style="background-image: linear-gradient(to bottom right, #d0fcfe, #b1cbff);"><span class="type">Previous Post</span><h3>HTML笔记</h3></a></div><div class="item right"><a href="/2024/09/20/Web%E7%AC%94%E8%AE%B0/%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93/" rel="next" itemprop="url" title="JS原型链污染" style="background-image: linear-gradient(to bottom right, #8ee4f8, #cbf4a7);"><span class="type">Next Post</span><h3>JS原型链污染</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="Contents"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#php%E4%BC%AA%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.</span> <span class="toc-text"> PHP 伪协议</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E8%AE%BF%E9%97%AE%E6%95%B0%E6%8D%AE%E6%B5%81"><span class="toc-number">1.1.</span> <span class="toc-text"> 一、访问数据流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E8%BF%87%E6%BB%A4%E6%95%B0%E6%8D%AE%E6%B5%81"><span class="toc-number">1.2.</span> <span class="toc-text"> 二、过滤数据流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E5%A4%9A%E4%B8%AA%E8%BF%87%E6%BB%A4%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text"> 三、多个过滤条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-%E8%BF%87%E6%BB%A4%E5%B9%B6%E5%86%99%E5%85%A5%E6%95%B0%E6%8D%AE%E6%B5%81"><span class="toc-number">1.4.</span> <span class="toc-text"> 四、过滤并写入数据流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94-%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="toc-number">1.5.</span> <span class="toc-text"> 五、过滤器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-stringrot13"><span class="toc-number">1.5.1.</span> <span class="toc-text"> 1、string.rot13</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-stringtoupper"><span class="toc-number">1.5.2.</span> <span class="toc-text"> 2、string.toupper</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-stringtolower"><span class="toc-number">1.5.3.</span> <span class="toc-text"> 3、string.tolower</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-convertbase64-encode"><span class="toc-number">1.5.4.</span> <span class="toc-text"> 4、convert.base64-encode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-converticonv"><span class="toc-number">1.5.5.</span> <span class="toc-text"> 5、convert.iconv.*</span></a></li></ol></li></ol></li></ol></div><div class="related panel pjax" data-title="Related"></div><div class="overview panel" data-title="Overview"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="John Doe" src="/assets/avatar.jpg"/><p class="name" itemprop="name">John Doe</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">8</span><span class="name">posts</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/yourname" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;yourname"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2024/09/20/Web%E7%AC%94%E8%AE%B0/%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2023/10/10/Web%E7%AC%94%E8%AE%B0/#HTML/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>Random Posts</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2024/11/02/Web%E7%AC%94%E8%AE%B0/Web%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/">Web基础知识</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/10/09/Misc/WireShark%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">WireShark使用</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/10/10/Web%E7%AC%94%E8%AE%B0/#HTML/">HTML笔记</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/11/15/Web%E7%AC%94%E8%AE%B0/PHP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">PHP学习笔记</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/09/20/Web%E7%AC%94%E8%AE%B0/%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93/">JS原型链污染</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/10/06/Web%E7%AC%94%E8%AE%B0/%E3%80%8A%E5%9B%BE%E8%A7%A3HTTP%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">《图解HTTP》读书笔记</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/10/23/Web%E7%AC%94%E8%AE%B0/%E7%BD%91%E7%BB%9C%E4%BD%8D%E5%92%8C%E4%B8%BB%E6%9C%BA%E4%BD%8D/">网络位 主机位</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/04/15/Web%E7%AC%94%E8%AE%B0/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/">PHP伪协议</a></span></li></ul></div><div class="rpost pjax"><h2>Recent Comments</h2></div></div><div class="status"><div class="copyright">&copy; 2022 -<span itemprop="copyrightYear">2024</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">John Doe @ testName</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="Symbols count total">40k words</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="Reading time total">36 mins.</span></div><div class="powered-by">Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+        path: `2024/04/15/Web笔记/PHP伪协议/`,
+        favicon: {
+        show: `(●´3｀●) Here we go again.`,
+        hide: `(´Д｀) It's a disaster!`
+    },
+    search: {
+        placeholder: "Search for Posts",
+        empty: "We didn't find any results for the search: ${query}",
+        stats: "${hits} results found in ${time} ms"
+    },
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">Article Timeliness Alert</span><br>This is an article published {{publish}} days ago and last updated {{updated}} days ago. Some information may have changed, so please be careful to screen it.</p></div>`,
+    quiz: {
+        choice: `Multiple Choice`,
+        multiple: `Multiple Answer`,
+        true_false: `True/False`,
+        essay: `Questions`,
+        gap_fill: `Gap Filling`,
+        mistake: `Wrong Answer`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script src="https://s4.zstatic.net/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="/js/siteInit.js?v=0.4.14" type="module" fetchpriority="high" defer></script></body></html>
