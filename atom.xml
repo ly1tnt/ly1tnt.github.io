@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>ShokaX Can</title>
+    <id>https://ly1tnt.github.io</id>
+    <title>Linya Shoka</title>
     <subtitle></subtitle>
-    <icon>http://example.com/assets/favicon.ico</icon>
-    <link href="http://example.com" />
+    <icon>https://ly1tnt.github.io/assets/favicon.ico</icon>
+    <link href="https://ly1tnt.github.io" />
     <author>
-      <name>John Doe</name>
+      <name>Linya</name>
     </author>
     <updated>2024-11-15T08:49:12.000Z</updated>
     <entry>
-        <id>http://example.com/2024/11/15/Web%E7%AC%94%E8%AE%B0/PHP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+        <id>https://ly1tnt.github.io/2024/11/15/Web%E7%AC%94%E8%AE%B0/PHP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
         <title>PHP学习笔记</title>
-        <link rel="alternate" href="http://example.com/2024/11/15/Web%E7%AC%94%E8%AE%B0/PHP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+        <link rel="alternate" href="https://ly1tnt.github.io/2024/11/15/Web%E7%AC%94%E8%AE%B0/PHP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
         <content type="html">&lt;h1 id=&#34;php学习笔记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#php学习笔记&#34;&gt;#&lt;/a&gt; PHP 学习笔记&lt;/h1&gt;
 &lt;h2 id=&#34;一-基本知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-基本知识&#34;&gt;#&lt;/a&gt; 一、基本知识&lt;/h2&gt;
 &lt;h3 id=&#34;11函数知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#11函数知识&#34;&gt;#&lt;/a&gt; 1.1 函数知识&lt;/h3&gt;
@@ -231,9 +231,9 @@ echo &#39;这是第 &amp;quot; &#39;  . __LINE__ . &#39; &amp;quot; 行&#39;;
         <updated>2024-11-15T08:49:12.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2024/11/02/Web%E7%AC%94%E8%AE%B0/Web%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</id>
+        <id>https://ly1tnt.github.io/2024/11/02/Web%E7%AC%94%E8%AE%B0/Web%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</id>
         <title>Web基础知识</title>
-        <link rel="alternate" href="http://example.com/2024/11/02/Web%E7%AC%94%E8%AE%B0/Web%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
+        <link rel="alternate" href="https://ly1tnt.github.io/2024/11/02/Web%E7%AC%94%E8%AE%B0/Web%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
         <content type="html">&lt;h1 id=&#34;web基本知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web基本知识&#34;&gt;#&lt;/a&gt; Web 基本知识&lt;/h1&gt;
 &lt;h3 id=&#34;json&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#json&#34;&gt;#&lt;/a&gt; JSON&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -464,9 +464,9 @@ $b=&amp;quot;\x4d\xc9\x68\xff\x0e\xe3\x5c\x20\x95\x72\xd4\x77\x7b\x72\x15\x87\xd
         <updated>2024-11-02T04:59:00.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2024/10/23/Web%E7%AC%94%E8%AE%B0/%E7%BD%91%E7%BB%9C%E4%BD%8D%E5%92%8C%E4%B8%BB%E6%9C%BA%E4%BD%8D/</id>
+        <id>https://ly1tnt.github.io/2024/10/23/Web%E7%AC%94%E8%AE%B0/%E7%BD%91%E7%BB%9C%E4%BD%8D%E5%92%8C%E4%B8%BB%E6%9C%BA%E4%BD%8D/</id>
         <title>网络位 主机位</title>
-        <link rel="alternate" href="http://example.com/2024/10/23/Web%E7%AC%94%E8%AE%B0/%E7%BD%91%E7%BB%9C%E4%BD%8D%E5%92%8C%E4%B8%BB%E6%9C%BA%E4%BD%8D/"/>
+        <link rel="alternate" href="https://ly1tnt.github.io/2024/10/23/Web%E7%AC%94%E8%AE%B0/%E7%BD%91%E7%BB%9C%E4%BD%8D%E5%92%8C%E4%B8%BB%E6%9C%BA%E4%BD%8D/"/>
         <content type="html">&lt;h2 id=&#34;网络位和主机位&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#网络位和主机位&#34;&gt;#&lt;/a&gt; 网络位和主机位&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -494,9 +494,9 @@ $b=&amp;quot;\x4d\xc9\x68\xff\x0e\xe3\x5c\x20\x95\x72\xd4\x77\x7b\x72\x15\x87\xd
         <updated>2024-10-23T02:23:15.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2024/10/09/Misc/WireShark%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+        <id>https://ly1tnt.github.io/2024/10/09/Misc/WireShark%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
         <title>WireShark使用</title>
-        <link rel="alternate" href="http://example.com/2024/10/09/Misc/WireShark%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+        <link rel="alternate" href="https://ly1tnt.github.io/2024/10/09/Misc/WireShark%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
         <content type="html">&lt;h1 id=&#34;wireshark学习笔记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#wireshark学习笔记&#34;&gt;#&lt;/a&gt; WireShark 学习笔记&lt;/h1&gt;
 &lt;h3 id=&#34;1过滤器指令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1过滤器指令&#34;&gt;#&lt;/a&gt; 1. 过滤器指令&lt;/h3&gt;
 &lt;p&gt;http contains &amp;quot;XX&amp;quot;&lt;/p&gt;
@@ -516,9 +516,9 @@ $b=&amp;quot;\x4d\xc9\x68\xff\x0e\xe3\x5c\x20\x95\x72\xd4\x77\x7b\x72\x15\x87\xd
         <updated>2024-10-09T11:07:00.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2024/10/06/Web%E7%AC%94%E8%AE%B0/%E3%80%8A%E5%9B%BE%E8%A7%A3HTTP%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
+        <id>https://ly1tnt.github.io/2024/10/06/Web%E7%AC%94%E8%AE%B0/%E3%80%8A%E5%9B%BE%E8%A7%A3HTTP%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
         <title>《图解HTTP》读书笔记</title>
-        <link rel="alternate" href="http://example.com/2024/10/06/Web%E7%AC%94%E8%AE%B0/%E3%80%8A%E5%9B%BE%E8%A7%A3HTTP%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+        <link rel="alternate" href="https://ly1tnt.github.io/2024/10/06/Web%E7%AC%94%E8%AE%B0/%E3%80%8A%E5%9B%BE%E8%A7%A3HTTP%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
         <content type="html">&lt;h1 id=&#34;图解http学习笔记&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图解http学习笔记&#34;&gt;#&lt;/a&gt; 《图解 HTTP》学习笔记&lt;/h1&gt;
 &lt;h2 id=&#34;第一章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章&#34;&gt;#&lt;/a&gt; 第一章&lt;/h2&gt;
 &lt;h3 id=&#34;11-12-http基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#11-12-http基础&#34;&gt;#&lt;/a&gt; 1.1-1.2 HTTP 基础&lt;/h3&gt;
@@ -760,9 +760,9 @@ Content-Type: text/plain; charset=UTF-8
         <updated>2024-10-06T09:13:00.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2024/09/20/Web%E7%AC%94%E8%AE%B0/%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93/</id>
+        <id>https://ly1tnt.github.io/2024/09/20/Web%E7%AC%94%E8%AE%B0/%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93/</id>
         <title>JS原型链污染</title>
-        <link rel="alternate" href="http://example.com/2024/09/20/Web%E7%AC%94%E8%AE%B0/%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93/"/>
+        <link rel="alternate" href="https://ly1tnt.github.io/2024/09/20/Web%E7%AC%94%E8%AE%B0/%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93/"/>
         <content type="html">&lt;h1 id=&#34;原型链污染&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#原型链污染&#34;&gt;#&lt;/a&gt; 原型链污染&lt;/h1&gt;
 &lt;p&gt;原型链污染（Prototype Pollution）是一种 web 应用程序中常见的安全漏洞，主要影响使用 JavaScript 的应用程序。它是一种攻击技术，通过修改 JavaScript 对象的原型链，来实现对应用程序的非法操作和控制。&lt;/p&gt;
 &lt;p&gt;JavaScript 中的对象是通过&lt;strong&gt;原型链进行继承的&lt;/strong&gt;。&lt;/p&gt;
@@ -771,9 +771,9 @@ Content-Type: text/plain; charset=UTF-8
         <updated>2024-09-20T10:47:30.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2024/04/15/Web%E7%AC%94%E8%AE%B0/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/</id>
+        <id>https://ly1tnt.github.io/2024/04/15/Web%E7%AC%94%E8%AE%B0/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/</id>
         <title>PHP伪协议</title>
-        <link rel="alternate" href="http://example.com/2024/04/15/Web%E7%AC%94%E8%AE%B0/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/"/>
+        <link rel="alternate" href="https://ly1tnt.github.io/2024/04/15/Web%E7%AC%94%E8%AE%B0/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE/"/>
         <content type="html">&lt;h1 id=&#34;php伪协议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#php伪协议&#34;&gt;#&lt;/a&gt; PHP 伪协议&lt;/h1&gt;
 &lt;p&gt;php:// 用来访问输入和输出流（I/O streams）。&lt;br /&gt;
 输入 / 输出流也就是「数据流」，数据流可以是某个文件（xx.php）或某个 url（&lt;a href=&#34;http://www.baidu.com&#34;&gt;http://www.baidu.com&lt;/a&gt;）。&lt;/p&gt;
@@ -915,9 +915,9 @@ ArmSCII-8 (alias: ArmSCII8)
         <updated>2024-04-15T13:55:50.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/10/10/Web%E7%AC%94%E8%AE%B0/#HTML/</id>
+        <id>https://ly1tnt.github.io/2023/10/10/Web%E7%AC%94%E8%AE%B0/#HTML/</id>
         <title>HTML笔记</title>
-        <link rel="alternate" href="http://example.com/2023/10/10/Web%E7%AC%94%E8%AE%B0/#HTML/"/>
+        <link rel="alternate" href="https://ly1tnt.github.io/2023/10/10/Web%E7%AC%94%E8%AE%B0/#HTML/"/>
         <content type="html">&lt;h1 id=&#34;html&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#html&#34;&gt;#&lt;/a&gt; #HTML&lt;/h1&gt;
 &lt;p&gt;W3C world wie web construction 万维网联盟&lt;/p&gt;
 &lt;p&gt;hyper text markup language 超文本标记语言&lt;/p&gt;
